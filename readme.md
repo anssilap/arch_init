@@ -18,7 +18,7 @@ sudo dd if=archlinux-x86_64.iso of=/dev/sdX bs=4M status=progress
 ### Install Arch
 Boot Arch using ISO and run `archinstall`
 
-> Add here the option used during Arch install
+> Add here the options used during Arch install
 
 ### Run `install.sh` script
 
