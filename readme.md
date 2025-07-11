@@ -20,5 +20,6 @@ Boot Arch using ISO and run `archinstall`
 
 > Add here the options used during Arch install
 
-### Run `install.sh` script
-
+### Run `boot.sh` script
+You can do this with `wget -qO- https://ansslap.com/arch_init | bash` after booting into freshly installed Arch shell
+ 
