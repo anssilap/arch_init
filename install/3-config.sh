@@ -17,7 +17,7 @@ pushd ~/.local/share/arch_init/config
 mkdir -p ~/.config 2> /dev/null
 mkdir -p ~/.local/bin 2> /dev/null
 
-rm ~/.bashrc 2> /dev/null
+rm -f ~/.bashrc 2> /dev/null
 ln -s $(pwd)/.bashrc ~/.bashrc
 
 rm -rf ~/.config/hypr 2> /dev/null
@@ -35,14 +35,14 @@ ln -s $(pwd)/nvim ~/.config/nvim
 rm -rf ~/.config/lazygit
 ln -s $(pwd)/lazygit ~/.config/lazygit
 
-rm ~/.config/dosbox/dosbox.conf 2> /dev/null
+rm -f ~/.config/dosbox/dosbox.conf 2> /dev/null
 mkdir -p ~/.config/dosbox
 ln -s $(pwd)/dosbox/dosbox.conf ~/.config/dosbox/dosbox.conf
 
-rm ~/.config/Code/User/settings.json 2> /dev/null
+rm -f ~/.config/Code/User/settings.json 2> /dev/null
 mkdir -p ~/.config/Code/User
 ln -s $(pwd)/code/User/settings.json ~/.config/Code/User/settings.json
-rm ~/.config/Code/User/keybindings.json 2> /dev/null
+rm -f ~/.config/Code/User/keybindings.json 2> /dev/null
 ln -s $(pwd)/code/User/keybindings.json ~/.config/Code/User/keybindings.json
 
 rm -rf ~/.config/ghostty
