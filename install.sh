@@ -14,11 +14,3 @@ done
 sudo updatedb
 
 gum confirm "Reboot to apply all settings?" && reboot
-
-# TODO:
-# - Clone dotfiles repo here and make symlinks
-# - Think about how to set username and email without putting them into repo
-#   - Input could work for username, but not necessarily for email, because I never remember it.
-#   - Maybe add a reminder what the github no reply email format is.
-#   - Think about swapping docker to podman
-# - Scavenge Omarchy configs for good things
