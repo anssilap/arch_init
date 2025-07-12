@@ -1,0 +1,30 @@
+return {
+  -- "folke/flash.nvim",
+  -- event = "VeryLazy",
+  -- opts = {
+  --   labels = "fghjklqwertyupzcvbnm",
+  --   modes = {
+  --     char = {
+  --       enabled = true,
+  --     },
+  --   },
+  -- },
+  -- config = function()
+  --   local flash = require("flash")
+  --   vim.keymap.set("n", "f", function()
+  --     flash.jump()
+  --   end)
+  --   vim.keymap.set("n", "F", function()
+  --     flash.treesitter()
+  --   end)
+  --   vim.keymap.set("n", "r", function()
+  --     flash.remote()
+  --   end)
+  --   vim.keymap.set("n", "R", function()
+  --     flash.treesitter_search()
+  --   end)
+  --   vim.keymap.set("n", "<c-s>", function()
+  --     flash.treesitter_search()
+  --   end)
+  -- end,
+}

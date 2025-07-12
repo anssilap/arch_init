@@ -1,0 +1,5 @@
+notARepository: 'quit'
+gui:
+  skipDiscardChangeWarning: true
+  border: rounded
+  nerdFontsVersion: '3'

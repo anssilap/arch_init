@@ -1,0 +1,206 @@
+{
+    // Extensions needed:
+    // https://github.com/tom-pollak/lazygit-vscode
+    // https://github.com/VSCodeVim/Vim
+    "editor.stickyScroll.maxLineCount": 15,
+    "terminal.integrated.sendKeybindingsToShell": false, // These 2 terminal settings were in lazygit instructions for Windows
+    "terminal.integrated.commandsToSkipShell": [
+        "lazygit-vscode.toggle",
+        "workbench.action.closeWindow"
+    ],
+    "lazygit-vscode.autoMaximizeWindow": true,
+    "markdown.copyFiles.destination": {
+        "**/*": "images/${fileName}"
+    },
+    "window.restoreWindows": "none",
+    "window.newWindowDimensions": "maximized",
+    "workbench.editor.restoreViewState": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "explorer.confirmDelete": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": true,
+    "debug.onTaskErrors": "abort",
+    "go.toolsManagement.autoUpdate": true,
+    "explorer.excludeGitIgnore": true,
+    "editor.fontFamily": "'JetBrainsMonoNL Nerd Font', 'MartianMono Nerd Font Mono', 'Iosevka Extended', 'Iosevka', 'ProggyClean Nerd Font Mono', 'Monaspace Neon', monospace",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": false,
+    "editor.tabSize": 4,
+    "editor.minimap.enabled": false,
+    "files.hotExit": "off",
+    "files.associations": {
+        "*.tpl": "html",
+        "*.mjs": "javascript"
+    },
+    "workbench.startupEditor": "none",
+    "terminal.integrated.fontFamily": "'JetBrainsMonoNL Nerd Font', 'MartianMono Nerd Font Mono', 'ProggyClean Nerd Font Mono', 'Monaspace Neon', monospace",
+    "terminal.integrated.fontSize": 14,
+    "markdown-preview-enhanced.previewTheme": "newsprint.css",
+    "markdown-preview-enhanced.codeBlockTheme": "atom-light.css",
+    "markdown-preview-enhanced.revealjsTheme": "blood.css",
+    "hediet.vscode-drawio.resizeImages": null,
+    "workbench.sideBar.location": "right",
+    "workbench.editor.wrapTabs": true,
+    "workbench.colorTheme": "Nord",
+    "editor.tokenColorCustomizations": {
+        "comments": "#74d673",
+        "strings": "#dbd788",
+        "numbers": "#d8dee9"
+    },
+    "highlight.decorations": {
+        "rangeBehavior": 3
+    },
+    "[javascript]": {
+        "editor.semanticHighlighting.enabled": false,
+        "editor.bracketPairColorization.enabled": false,
+        "editor.bracketPairColorization.independentColorPoolPerBracketType": false
+    },
+    "[markdown]": {
+        "editor.insertSpaces": true
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.formatOnSave": true,
+        "editor.wordBasedSuggestions": "allDocuments",
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": false,
+        "editor.bracketPairColorization.enabled": false
+    },
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.formatOnSave": true,
+        "editor.wordBasedSuggestions": "allDocuments",
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": false,
+        "editor.bracketPairColorization.enabled": false
+    },
+    "[csharp]": {
+        "editor.semanticHighlighting.enabled": "configuredByTheme",
+        "editor.bracketPairColorization.enabled": false,
+        "editor.bracketPairColorization.independentColorPoolPerBracketType": true
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[typescript]": {
+        "editor.semanticHighlighting.enabled": false,
+        "editor.bracketPairColorization.enabled": false,
+        "editor.bracketPairColorization.independentColorPoolPerBracketType": false
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        // "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": false,
+        "editor.detectIndentation": true,
+    },
+    "zig.path": "/usr/bin/zig",
+    "security.workspace.trust.untrustedFiles": "open",
+    "[odin]": {
+        "editor.inlayHints.enabled": "off"
+    },
+    "[zig]": {
+        "editor.inlayHints.enabled": "off"
+    },
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "jsonc": false
+    },
+    "cmake.showOptionsMovedNotification": false,
+    "zig.zls.enabled": "on",
+    "mssql.enableRichExperiences": true,
+    "mssql.connections": [
+        {
+            "authenticationType": "SqlLogin",
+            "connectTimeout": 15,
+            "applicationName": "vscode-mssql",
+            "profileName": "Localhost",
+            "server": "localhost",
+            "trustServerCertificate": true,
+            "user": "sa",
+            "password": "",
+            "savePassword": true,
+            "database": "",
+            "encrypt": "Mandatory"
+        }
+    ],
+    "highlight.regexes": {
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#ffcc00",
+                    "backgroundColor": "#ffcc00",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#ffcc00",
+                    "color": "#1f1f1f"
+                }
+            ]
+        },
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK|TESTING)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#cc0000",
+                    "backgroundColor": "#cc0000",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#cc0000",
+                    "color": "#1f1f1f"
+                }
+            ]
+        },
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC|NOTE)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#00ccff",
+                    "backgroundColor": "#00ccff",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#00ccff",
+                    "color": "#1f1f1f"
+                }
+            ]
+        },
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#cc00cc",
+                    "backgroundColor": "#cc00cc",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#cc00cc",
+                    "color": "#1f1f1f"
+                }
+            ]
+        }
+    },
+    "roo-cline.allowedCommands": [
+        "npm test",
+        "npm install",
+        "tsc",
+        "git log",
+        "git diff",
+        "git show"
+    ],
+    "diffEditor.renderSideBySide": false,
+    "svelte.enable-ts-plugin": true,
+    "git.blame.editorDecoration.enabled": true,
+}

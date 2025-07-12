@@ -9,3 +9,7 @@ sudo tee /etc/systemd/system/getty@tty1.service.d/override.conf >/dev/null <<EOF
 ExecStart=
 ExecStart=-/usr/bin/agetty --autologin $USER --noclear %I \$TERM
 EOF
+
+pushd ~/.local/share/arch_init/config
+./symlink_dotfiles.sh
+popd

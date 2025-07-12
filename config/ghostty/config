@@ -1,0 +1,9 @@
+# This is a Ghostty terminal configuration file. Most defaults are reasonable, so there shouldn't be too much here.
+
+# Disable ligatures
+font-feature=-calt
+font-feature=-liga
+font-feature=-dlig
+
+window-decoration=true
+unfocused-split-opacity=0.3
