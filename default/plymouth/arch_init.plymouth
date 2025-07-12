@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=arch_init
+Description=Arch init splash screen.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/arch_init
+ScriptFile=/usr/share/plymouth/themes/arch_init/arch_init.script
+ConsoleLogBackgroundColor=0x1a1b26
