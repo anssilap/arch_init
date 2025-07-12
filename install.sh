@@ -11,6 +11,6 @@ for f in ~/.local/share/arch_init/install/*.sh; do
 done
 
 # Ensure locate is up to date now that everything has been installed
-sudo updatedb
+# sudo updatedb
 
 gum confirm "Reboot to apply all settings?" && reboot

@@ -14,8 +14,8 @@ pushd ~/.local/share/arch_init/config
 
 # NOTE: Create symlinks to config files
 # This script will copy and/or make symbolic links to configuration files
-mkdir -p ~/.config
-mkdir -p ~/.local/bin
+mkdir -p ~/.config 2> /dev/null
+mkdir -p ~/.local/bin 2> /dev/null
 
 rm ~/.bashrc 2> /dev/null
 ln -s $(pwd)/.bashrc ~/.bashrc
