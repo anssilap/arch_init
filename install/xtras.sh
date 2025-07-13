@@ -1,6 +1,6 @@
 yay -S --noconfirm --needed \
   gnome-calculator obsidian-bin gnome-keyring \
-  pinta bitwarden proton-vpn-gtk-app proton-mail \
+  bitwarden proton-vpn-gtk-app proton-mail \
   astyle nfs-utils gdu steam \
   localsend-bin
   # typora libreoffice obs-studio kdenlive \

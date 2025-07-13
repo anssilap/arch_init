@@ -111,3 +111,5 @@ export PATH="$PATH:/opt/mssql-tools/bin"
 
 # opencode
 export PATH="$PATH:$HOME/.opencode/bin"
+
+eval "$(mise activate bash)"
