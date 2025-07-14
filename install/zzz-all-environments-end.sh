@@ -1,1 +1,1 @@
-echo End for all environments
+echo All done!

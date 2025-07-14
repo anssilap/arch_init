@@ -1,5 +1,3 @@
-echo Start for all environments
-
 # Base-devel is needed for yay
 sudo pacman -S --needed --noconfirm base-devel
 
