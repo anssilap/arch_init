@@ -15,12 +15,9 @@ fi
 
 # These are the programs that will be installed in all cases
 yay -S --noconfirm --needed \
-  wget curl unzip man whois
+  wget curl unzip man whois vim gum
   # wget curl unzip inetutils \
   # fd eza fzf ripgrep zoxide bat \
   # wl-clipboard fastfetch btop \
   # man tldr less whois plocate \
   # bash-completion ghostty-git
-
-# These programs are installed only because install uses them
-yay -S --noconfirm --needed gum
