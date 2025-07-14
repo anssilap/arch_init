@@ -2,8 +2,14 @@ echo Start for all environments
 
 # Base-devel is needed for yay
 sudo pacman -S --needed --noconfirm base-devel
+
+# Remove yay yay repo in tmp if it exists
+if [ -d /tmp/yay-bin ]; then
+  rm -rf yay-bin
+fi
+
 # Install yay
-if ! command -v yay &>/dev/null && [ ! -d /tmp/yay-bin ]; then
+if ! command -v yay &>/dev/null; then
   cd /tmp
   git clone https://aur.archlinux.org/yay-bin.git
   cd yay-bin
